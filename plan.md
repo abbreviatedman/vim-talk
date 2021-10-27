@@ -18,7 +18,9 @@
 - Developers' time:
   - 90% researching and thinking about what change needs to happen
   - 10% making that change
-- Vim makes that last 10% very, very fast.
+- Vim does nothing for your research and your thinking and your problem-solving skills.
+- But it makes that time where you're making the change almost instantaneous--no friction between the change you want to make and it happening.
+- A skilled Vim user effectively wishes a change to happen and it just... happens.
 
 ### It's Everywhere
 
@@ -26,15 +28,18 @@ Once you know Vim, you can always use it.
 
 - the terminal app is on almost all Linux, Unix, and Mac machines.
 - you can use its editing language in VS Code and almost all other editors
-- and in many online IDEs (including REPL, Codewars, LeetCode, and HackerRank)
-
-## So It Won't Make You A Better Problem Solver
-
-But it will make you a much better solution IMPLEMENTER.
+- and in many online IDEs as well--REPL, Codewars, LeetCode, HackerRank, and more
 
 ## How Is It So Fast?
 
-Vim uses a **modal** editing system for its keybindings.
+### Vim uses a **modal** editing system for its keybindings.
+
+So we don't have to use Command-Shift-K to delete a line, just `dd`. We achieve this by having:
+
+- a mode where typing things actually enters those letters onto the screen
+- a mode where every letter and symbol on your keyboard is instead a one-key editing shortcut
+
+### A demo
 
 ## Install The Vim Extension
 
@@ -45,16 +50,84 @@ Vim uses a **modal** editing system for its keybindings.
   - In fact, you should probably turn it off after this talk!
 - Let's install it!
 
+## We'll Be Touring, Not Learning
+
+I'm going to take you on a grand tour of the power of vim editing.
+
+Do NOT try to memorize this lesson!
+
+If/when you want to learn Vim, you should start with a SMALL subset of these commands
+Then, when you have those down, add a couple more to your list.
+
+You can get good with vim pretty quickly, but you'll have to be patient until you're great with vim.
+
+Again, don't panic if you miss a few commands here. I'm just trying to give you a feel for what editing with vim is like!
+
 ## Order Of Commands
 
 ### Movement
 
-- w
-- b
-- hjkl
+- `hjkl`
   - convenient but too small, tendency to spam
-  - j/k good with count, relative numbers on
+  - `j`/`k` good with count--turn relative numbers on - VSCodeVim setting: "Smart Relative Line"
+- `w`
+- `b`
+- `f`/`t` with `;`/`,`
+- `/` with `n`/`N`
+- `$`/`^`
 
-## Later:
+### Use movement with x/r
 
-- Vim setting: "Smart Relative Line"
+#### Exercise 1: Remove and replace characters.
+
+Don't forget `u` to undo!
+
+### Use movement with d
+
+Now we're combining a VERB, `d`, with a NOUN, saying what to do that verb TO.
+
+So these can be read as
+
+- `dj`: delete one line down (and the current line)
+- `d3j`: delete 3 lines down (and the current line)
+- `dtr`: delete to the `r`
+- `d5w`: delete 5 words (technically, delete until you're at 5 `w` movements)
+- `d/const<RET>`: delete until you hit the search term `const`.
+- `d$`: delete until the end of the line
+- `d^`: delete until the start of the line
+- `dd`: delete the line - repeating a command almost always means "do this for the line"
+
+#### Exercise 2: remove words and lines
+
+Don't forget `u` to undo!
+
+### Repetition
+
+`.`
+
+#### Exercise 4: repeating yourself
+
+- delete until the end of the line a few times... `=== false`?
+- delete a couple lines up a few times to get rid of sets of console logs
+- find and replace `!` with `=`
+
+### Normal mode vs. insert mode
+
+We've been staying in what's called "normal mode", because for a coder the DEFAULT is to be editing text, not adding it.
+
+But you'll definitely need to add text fairly often too.
+
+And you'll be _changing_ text a lot too.
+
+### Entering insert mode
+
+- `i`/`a`
+- `I`/`A`
+- `o`/`O`
+
+#### Exercise 5: repeating additions
+
+- adding semi-colons at the end of lines
+- adding `let` at the beginning of lines
+- adding `$` just before `{` to make interpolating values work
+- add `return arr` in accumulator pattern functions
