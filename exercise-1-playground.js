@@ -42,3 +42,6 @@ function greet(person, weekday) (
 )
 
 // Exercise 4A
+// prose to correct
+// w/b/e?
+// / and n?
