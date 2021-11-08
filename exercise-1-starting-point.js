@@ -25,8 +25,8 @@ function isodd(numm) {
 
 // Exercise 2A
 // use f to seek the first "e", r to replace with "E"
-// use / to find "numm", l to move to "m", delete with x
-// n to find next numm, repeat
+// use f to find the "m" in "numm", delete with x
+// ; to find next "m", repeat
 // f/F to jump to ";" and "1"
 // x to delete ";", r to replace "1" with "0"
 function iseven(numm) {
