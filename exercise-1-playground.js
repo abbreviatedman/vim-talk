@@ -3,10 +3,11 @@
  *
  * hjkl - move left/down/up/right by character
  * x - delete the character under the cursor
+ * u - undo!
  * r - replace the character under the cursor with the next character typed
  * f - move to next character typed
  * F - move backward to next character typed
- * ; - move to last character searched for via f/F
+ * ; - move to next match for previous character search
  * / - search for multi-character string
  * n - go to next match for previous search
  * w - go to next start of word
