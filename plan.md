@@ -92,7 +92,7 @@ So these can be read as
 - `d3j`: delete 3 lines down (and the current line)
 - `dtr`: delete to the `r`
 - `d5w`: delete 5 words (technically, delete until you're at 5 `w` movements)
-- `d/const<RET>`: delete until you hit the search term `const`.
+- `d/const` (and then hit return): delete until you hit the search term `const`.
 - `d$`: delete until the end of the line
 - `d^`: delete until the start of the line
 - `dd`: delete the line - repeating a command almost always means "do this for the line"
