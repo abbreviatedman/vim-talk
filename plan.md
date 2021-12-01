@@ -105,11 +105,22 @@ Don't forget `u` to undo!
 
 `.`
 
-#### Exercise 4: repeating yourself
+#### Exercise 3: repeating yourself
 
 - delete until the end of the line a few times... `=== false`?
 - delete a couple lines up a few times to get rid of sets of console logs
 - find and replace `!` with `=`
+
+### Making Changes
+
+Don't forget `u` to undo!
+
+#### Exercise 4: Refactoring
+
+- Change variable names
+- Change partial method names (`cfwtoggle` to change `show` to `toggle`)
+- Change state: `dd` one state, `cc` another
+- Change in `setState` - `ci{`
 
 ### Normal mode vs. insert mode
 
