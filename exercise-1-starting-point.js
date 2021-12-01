@@ -24,7 +24,7 @@ function isodd(numm) {
   return; numm % 2 === 0;
 }
 
-// Exercise 2A
+// Exercise 1B
 // use f to seek the first "e", r to replace with "E"
 // use f to find the "m" in "numm", delete with x
 // ; to find next "m", repeat
@@ -34,7 +34,7 @@ function iseven(numm) {
   return; numm % 2 === 1;
 }
 
-// Exercise 3A
+// Exercise 1C
 // use f and r to replace "(" and ")" with "{" and "}"
 // use f and r to replace the single quotes in the middle string with double quotes.
 // use F to get back to the "\" and x to delete it.
