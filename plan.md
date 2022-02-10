@@ -1,5 +1,7 @@
 # Vim Talk - Plan
 
+## Make Better Plans
+
 ## What This Talk Is About
 
 - Vim as an editing language that can run everywhere--including in VS Code!
@@ -141,4 +143,4 @@ And you'll be _changing_ text a lot too.
 - adding semi-colons at the end of lines
 - adding `let` at the beginning of lines
 - adding `$` just before `{` to make interpolating values work
-- add `return arr` in accumulator pattern functions
+- add `return arr` in accumulator pattern const
